@@ -1,0 +1,10 @@
+2021-07-19 13:24:11,016 : INFO : Connected to MongoDB...
+2021-07-19 13:24:11,019 : INFO : Found Existed DataBase...
+2021-07-19 13:24:11,022 : INFO : Current Date : 01-Jan-2021
+2021-07-19 13:24:11,022 : INFO : Checking fetch status for Date : 01-Jan-2021
+2021-07-19 13:24:11,023 : INFO : Fetch Status for Date : 01-Jan-2021 :: True
+2021-07-19 13:24:11,023 : INFO : Data for specified Date already in DataBase
+2021-07-19 13:24:11,024 : INFO : Current Date : 02-Jan-2021
+2021-07-19 13:24:11,024 : INFO : Checking fetch status for Date : 02-Jan-2021
+2021-07-19 13:24:11,024 : INFO : Fetch Status for Date : 02-Jan-2021 :: True
+2021-07-19 13:24:11,028 : INFO : Data for specified Date already in DataBase

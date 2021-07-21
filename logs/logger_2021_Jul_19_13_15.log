@@ -1,0 +1,44 @@
+2021-07-19 13:15:33,121 : INFO : Connected to MongoDB...
+2021-07-19 13:15:33,142 : INFO : Found Existed DataBase...
+2021-07-19 13:15:33,145 : INFO : Current Date : 01-Jan-2021
+2021-07-19 13:15:33,145 : INFO : Checking fetch status for Date : 01-Jan-2021
+2021-07-19 13:15:33,162 : INFO : Fetch Status for Date : 01-Jan-2021 :: True
+2021-07-19 13:15:33,162 : INFO : Data for specified Date already in DataBase
+2021-07-19 13:15:33,162 : INFO : Current Date : 02-Jan-2021
+2021-07-19 13:15:33,162 : INFO : Checking fetch status for Date : 02-Jan-2021
+2021-07-19 13:15:33,164 : INFO : Fetch Status for Date : 02-Jan-2021 :: False
+2021-07-19 13:15:33,165 : INFO : Data Not Present in DB, Start Extraction for Date : 02-Jan-2021
+2021-07-19 13:15:33,165 : INFO : Start Validation : Bajra :: 02-Jan-2021
+2021-07-19 13:15:33,166 : INFO : Validation Status : True
+2021-07-19 13:15:49,093 : INFO : Data Extracted Process is done for page : 1 :: DF Length: 52
+2021-07-19 13:15:49,093 : INFO : Extracting Page : 2
+2021-07-19 13:15:59,287 : INFO : Data Extracted Process is done for page : 2 :: DF Length: 52
+2021-07-19 13:15:59,287 : INFO : Extracting Page : 3
+2021-07-19 13:16:09,454 : INFO : Data Extracted Process is done for page : 3 :: DF Length: 52
+2021-07-19 13:16:09,454 : INFO : Extracting Page : 4
+2021-07-19 13:16:19,596 : INFO : Data Extracted Process is done for page : 4 :: DF Length: 13
+2021-07-19 13:16:19,596 : INFO : Extracting Page : 5
+2021-07-19 13:16:19,607 : ERROR : Exception during page : 5 :: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="cphBody_GridPriceData"]/tbody/tr[52]/td/table/tbody/tr/td[3]/input"}
+  (Session info: chrome=91.0.4472.124)
+Traceback (most recent call last):
+  File "C:\Users\tarun\PycharmProjects\internship\python_scripts\Agmarknet\modules\extractor.py", line 36, in next_to_second
+    if driver.find_element_by_xpath(nextElemPath):
+  File "C:\Users\tarun\anaconda3\envs\internship\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 394, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "C:\Users\tarun\anaconda3\envs\internship\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "C:\Users\tarun\anaconda3\envs\internship\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\tarun\anaconda3\envs\internship\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="cphBody_GridPriceData"]/tbody/tr[52]/td/table/tbody/tr/td[3]/input"}
+  (Session info: chrome=91.0.4472.124)
+
+2021-07-19 13:16:19,635 : INFO : Length of Final DF : 161
+2021-07-19 13:16:19,635 : INFO :     district     market  ... modal_price price_date
+0     Amreli     Amreli  ...      1365.0 2021-01-02
+1    Mehsana  Becharaji  ...      1125.0 2021-01-02
+2  Bhavnagar  Bhavnagar  ...      1355.0 2021-01-02
+
+[3 rows x 9 columns]
+2021-07-19 13:16:19,673 : INFO : Values Inserted for Commodity : Bajra :: Date : 02-Jan-2021
